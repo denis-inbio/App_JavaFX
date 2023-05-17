@@ -1,0 +1,9 @@
+#base, #container_language, #container_serverStatus {
+    -fx-border-color: black;
+}
+#button_imageEnglish, #button_imageRomanian, #button_minimizeOrMaximize {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}

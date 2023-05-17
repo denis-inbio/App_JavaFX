@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="base" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox>
+         <children>
+            <HBox alignment="TOP_CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="button_minimizeOrMaximize" mnemonicParsing="false" />
+                  <Button fx:id="button_closeItem" mnemonicParsing="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label fx:id="label_fileName" text="File name:" />
+                  <TextField fx:id="textField_fileName" maxWidth="400.0" prefWidth="400.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="." />
+                  <TextField fx:id="textField_fileType" maxWidth="85.0" />
+                  <Label fx:id="label_filesSize" maxWidth="100.0" text="&lt;size&gt;">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="label_sizeMeasurementUnit" maxWidth="70.0" text="| Bytes" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox fx:id="minimizable">
+         <children>
+            <VBox alignment="TOP_CENTER" spacing="7.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="5.0">
+                     <children>
+                        <Label fx:id="label_filePathName" text="File pathname:" />
+                        <TextField fx:id="textField_filePathName" editable="false" maxWidth="600.0" prefWidth="600.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="5.0">
+                     <children>
+                        <Label fx:id="label_databaseId" text="Database id:" />
+                        <TextField fx:id="textField_databaseId" editable="false" maxWidth="200.0" prefWidth="200.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Label fx:id="label_statusMessage" text="&lt;status&gt;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets top="7.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox>
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" spacing="20.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label fx:id="label_tags" text="Tags:" />
+                                    <TextArea fx:id="textArea_tags" maxHeight="110.0" prefHeight="110.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </TextArea>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" spacing="20.0">
+                           <children>
+                              <Button fx:id="button_saveTo" mnemonicParsing="false" text="Save to..." />
+                              <Button fx:id="button_visualizeWith" mnemonicParsing="false" text="Visualize with..." />
+                              <Button fx:id="button_insertOrUpdate" mnemonicParsing="false" text="Insert/Update" />
+                              <Button fx:id="button_removeFromDatabase" mnemonicParsing="false" text="Remove" />
+                              <Button fx:id="button_shareWith" mnemonicParsing="false" text="Share with..." />
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="5.0" />
+   </padding>
+</VBox>

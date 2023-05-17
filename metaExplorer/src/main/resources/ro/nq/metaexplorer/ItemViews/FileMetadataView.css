@@ -1,0 +1,12 @@
+#base {
+    -fx-border-color: black;
+}
+#button_minimizeOrMaximize, #button_closeItem {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+#button_saveTo, #button_visualizeWith, #button_insertOrUpdate, #button_shareWith {
+
+}

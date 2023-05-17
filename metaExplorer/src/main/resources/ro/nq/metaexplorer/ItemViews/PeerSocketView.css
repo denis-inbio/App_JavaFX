@@ -1,0 +1,12 @@
+#base {
+    -fx-border-color: black;
+}
+#button_minimizeOrMaximize, #button_editOrCommitCustomName {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+#button_connectOrDisconnectPeer {
+
+}

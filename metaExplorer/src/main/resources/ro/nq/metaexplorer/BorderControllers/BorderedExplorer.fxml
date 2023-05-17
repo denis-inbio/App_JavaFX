@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox fx:id="left" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="3.0" right="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="5.0" />
+         </padding></VBox>
+   </left>
+   <right>
+      <VBox fx:id="right" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="5.0" right="3.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="5.0" />
+         </padding></VBox>
+   </right>
+   <center>
+      <VBox fx:id="center" alignment="TOP_CENTER" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <VBox fx:id="top" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="3.0" right="3.0" top="3.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding></VBox>
+   </top>
+   <bottom>
+      <VBox fx:id="bottom" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="5.0" />
+         </padding></VBox>
+   </bottom>
+</BorderPane>

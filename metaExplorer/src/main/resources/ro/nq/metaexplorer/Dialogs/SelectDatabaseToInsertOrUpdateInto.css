@@ -1,0 +1,9 @@
+#base {
+    -fx-border-color: black;
+}
+#button_minimizeOrMaximize {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
